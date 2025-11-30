@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Google Keep Clone</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="app" role="application" aria-label="sticky Notes App">
+		<header class="app-header">
+			<h2>NOTES APP</h2>
+
+        <div class="controls">
+        <button id="darkToggle" title="Toggle dral mode">🌙</button>
+      </div>
+			<div class="search" title="search notes">
+				<input type="search" type="text" placeholder="Search Notes..." aria-label="Search notes" >
+			</div>
+
+			
+		</header>
+
+		<section class="create-note" aria-label="Create note area">
+			<div class="inputs">
+				<input id="noteTitle" type="text" placeholder="Note Title">
+				<textarea id="noteInput" placeholder="Write a Note..."></textarea>
+
+					<div style="display:flex;justify-content:space-between;align-items:center">
+          <div class="colors" aria-label="Choose color">
+            <span class="color" title="Yellow" data-color="#fff475" style="background:#fff475"></span>
+            <span class="color" title="Peach" data-color="#f28b82" style="background:#f28b82"></span>
+            <span class="color" title="Orange" data-color="#fbbc04" style="background:#fbbc04"></span>
+            <span class="color" title="Mint" data-color="#ccff90" style="background:#ccff90"></span>
+            <span class="color" title="Blue" data-color="#aecbfa" style="background:#aecbfa"></span>
+          </div>
+
+          <div style="display:flex;gap:8px">
+            <button id="addBtn" aria-label="Add note">Add</button>
+            <button id="addNoteBtn" title="Quick sticky">+</button>
+          </div>
+        </div>
+      </div>
+
+      	<div class="quick-add" aria-hidden="true">
+      		
+      </div>
+    </section>
+
+    <div class="desk" id="desk">
+      <div class="notes-container" id="notesContainer" aria-live="polite"></div>
+    </div>
+  </div>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<script src="script.js"></script>
+</body>
+</html>
